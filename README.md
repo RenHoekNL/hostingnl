@@ -8,7 +8,7 @@ If you want to have a wildcard SSL certificate, you need to do a challenge via t
 ```
 ./hostingnl.sh cleanup
 rm -f /var/log/letsencrypt/letsencrypt.log*
-certbot certonly --manual --manual-auth-hook ./hostingnl.sh -d palli.nl -d *.palli.nl --preferred-challenges dns
+certbot certonly --manual --manual-auth-hook ./hostingnl.sh -d example.com -d *.example.com --preferred-challenges dns
 ./hostingnl.sh cleanup
 ```
 4. Restart or reload any services that need to read the updated certificate
