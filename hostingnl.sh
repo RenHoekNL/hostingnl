@@ -4,7 +4,7 @@
 #
 # ./hostingnl.sh cleanup
 # rm -f /var/log/letsencrypt/letsencrypt.log*
-# certbot certonly --manual --manual-auth-hook ./hostingnl.sh -d palli.nl -d *.palli.nl --preferred-challenges dns
+# certbot certonly --manual --manual-auth-hook ./hostingnl.sh -d example.com -d *.example.com --preferred-challenges dns
 # ./hostingnl.sh cleanup
 #
 # The script requires curl, jq and that you set the API_TOKEN
@@ -16,7 +16,7 @@
 #
 
 
-API_TOKEN="f3d79a6917219948f421d1c53b4fd0003745626fb0e0b3848a8cf0c21aa0a7d7"
+API_TOKEN="your_token_goes_here"
 
 #
 # DO NOT CHANGE ANYTHING BELOW THIS LINE
